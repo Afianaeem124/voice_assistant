@@ -33,7 +33,9 @@ class _SplashScreenState extends State<SplashScreen> {
       splash: Column(children: [
         Center(
             child: Lottie.asset(
-          "hehe.json",
+          "assets/hehe.json",
+          height: 200,
+          width: 200,
           fit: BoxFit.fill,
         ))
       ]),
