@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:voice_assistant/homeScreen.dart';
-import 'package:voice_assistant/splah_Screen.dart';
 import 'package:voice_assistant/utils/pallete.dart';
+import 'package:voice_assistant/views/splah_Screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,9 @@ class MyApp extends StatelessWidget {
       title: 'Allen',
       theme: ThemeData.light(
         useMaterial3: true,
-      ).copyWith(scaffoldBackgroundColor: Pallete.whiteColor, appBarTheme: const AppBarTheme(backgroundColor: Pallete.whiteColor)),
+      ).copyWith(
+          scaffoldBackgroundColor: Pallete.whiteColor,
+          appBarTheme: const AppBarTheme(backgroundColor: Pallete.whiteColor)),
       home: const SplashScreen(),
     );
   }
